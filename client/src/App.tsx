@@ -11,6 +11,12 @@ function App() {
       <li>
         <Link to={`progress`}>Progress BAR</Link>
       </li>
+      <li>
+        <Link to={`counter`}>Counter</Link>
+      </li>
+      <li>
+        <Link to={`infinite`}>Infinite Scroll</Link>
+      </li>
     </ul>
   </>
   )

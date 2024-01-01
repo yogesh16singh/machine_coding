@@ -9,6 +9,10 @@ import './index.css'
 import ErrorPage from './error-page.tsx';
 import New from './New/New.tsx';
 import Progress from './Progress/Progress.tsx';
+import Counter from './Counter/Counter.tsx';
+import Inscroll from './Inscroll/Inscroll.tsx';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +29,16 @@ const router = createBrowserRouter([
     element: <Progress></Progress>,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/counter",
+    element: <Counter></Counter>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/infinite",
+    element: <Inscroll></Inscroll>,
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
