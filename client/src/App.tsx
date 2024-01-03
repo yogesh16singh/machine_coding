@@ -9,6 +9,9 @@ function App() {
         <Link to={`new`}>new</Link>
       </li>
       <li>
+        <Link to={`dark`}>Dark Mode</Link>
+      </li>
+      <li>
         <Link to={`progress`}>Progress BAR</Link>
       </li>
       <li>
