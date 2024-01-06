@@ -12,6 +12,7 @@ import Progress from './Progress/Progress.tsx';
 import Counter from './Counter/Counter.tsx';
 import Inscroll from './Inscroll/Inscroll.tsx';
 import Dark from './Dark/Dark.tsx';
+import FileExplore from './FileExplore/FileExplore.tsx';
 
 
 const router = createBrowserRouter([
@@ -44,7 +45,12 @@ const router = createBrowserRouter([
     path: "/dark",
     element: <Dark></Dark>,
     errorElement: <ErrorPage />,
-  }
+  },
+  {
+    path: "/fileExplore",
+    element: <FileExplore></FileExplore>,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

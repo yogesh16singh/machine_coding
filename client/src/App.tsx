@@ -20,6 +20,9 @@ function App() {
       <li>
         <Link to={`infinite`}>Infinite Scroll</Link>
       </li>
+      <li>
+        <Link to={`fileExplore`}>File Explore</Link>
+      </li>
     </ul>
   </>
   )
