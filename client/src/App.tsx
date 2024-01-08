@@ -23,6 +23,9 @@ function App() {
       <li>
         <Link to={`fileExplore`}>File Explore</Link>
       </li>
+      <li>
+        <Link to={`chess`}>Chess</Link>
+      </li>
     </ul>
   </>
   )

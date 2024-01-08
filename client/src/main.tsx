@@ -13,6 +13,7 @@ import Counter from './Counter/Counter.tsx';
 import Inscroll from './Inscroll/Inscroll.tsx';
 import Dark from './Dark/Dark.tsx';
 import FileExplore from './FileExplore/FileExplore.tsx';
+import Chess from './Chess/Chess.tsx';
 
 
 const router = createBrowserRouter([
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
   {
     path: "/fileExplore",
     element: <FileExplore></FileExplore>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/chess",
+    element: <Chess></Chess>,
     errorElement: <ErrorPage />,
   },
 ]);
