@@ -12,14 +12,14 @@ const ImageCaraousal = () => {
     const [imgno, setImageNo] = useState(2);
     return (
         <div className='flex flex-col justify-center items-center h-screen bg-slate-300 p-2 '>
-            <h1 className=' font-bold bg-black text-white mb-2 p-2 rounded-lg'>Image Caraousal</h1>
+            <h1 className=' font-bold bg-black text-white mb-2 py-2  px-7 rounded-lg'>Image Caraousal</h1>
             <div className='flex justify-center items-center'>
                 <span className='cursor-pointer' onClick={() => setImageNo(imgno == 0 ? imgarray.length - 1 : imgno - 1)}>◀</span>
                 <div className='flex '>
                     {
                         imgarray.map((cur, index) => {
                             return (
-                                imgno == index && <img className='w-96 h-72 rounded-lg' src={cur} alt='1' ></img>
+                                imgno == index && <img key={index} className='w-96 h-72 rounded-lg' src={cur} alt='1' ></img>
                             )
                         })
                     }
