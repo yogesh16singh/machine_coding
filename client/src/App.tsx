@@ -25,6 +25,9 @@ function App() {
       <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
         <Link to={`chess`}>Chess</Link>
       </li>
+      <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
+        <Link to={`imageCaraousal`}>Image Caraousal</Link>
+      </li>
     </ul>
   </div>
   )

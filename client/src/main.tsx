@@ -14,6 +14,7 @@ import Inscroll from './Inscroll/Inscroll.tsx';
 import Dark from './Dark/Dark.tsx';
 import FileExplore from './FileExplore/FileExplore.tsx';
 import Chess from './Chess/Chess.tsx';
+import ImageCaraousal from './ImageCaraousal/ImageCaraousal.tsx';
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
   {
     path: "/chess",
     element: <Chess></Chess>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/imageCaraousal",
+    element: <ImageCaraousal></ImageCaraousal>,
     errorElement: <ErrorPage />,
   },
 ]);
