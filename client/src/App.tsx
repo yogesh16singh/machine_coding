@@ -28,6 +28,12 @@ function App() {
       <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
         <Link to={`imageCaraousal`}>Image Caraousal</Link>
       </li>
+      <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
+        <Link to={`resizethrottle`}>Throttling</Link>
+      </li>
+      <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
+        <Link to={`otpui`}>Ui for OTP</Link>
+      </li>
     </ul>
   </div>
   )

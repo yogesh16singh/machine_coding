@@ -15,6 +15,8 @@ import Dark from './Dark/Dark.tsx';
 import FileExplore from './FileExplore/FileExplore.tsx';
 import Chess from './Chess/Chess.tsx';
 import ImageCaraousal from './ImageCaraousal/ImageCaraousal.tsx';
+import ResizeThrottle from './ResizeThrottle/ResizeThrottle.tsx';
+import Otpui from './Otpui/Otpui.tsx';
 
 
 const router = createBrowserRouter([
@@ -61,6 +63,16 @@ const router = createBrowserRouter([
   {
     path: "/imageCaraousal",
     element: <ImageCaraousal></ImageCaraousal>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/resizethrottle",
+    element: <ResizeThrottle></ResizeThrottle>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/otpui",
+    element: <Otpui></Otpui>,
     errorElement: <ErrorPage />,
   },
 ]);
