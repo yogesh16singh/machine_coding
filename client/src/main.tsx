@@ -17,6 +17,7 @@ import Chess from './Chess/Chess.tsx';
 import ImageCaraousal from './ImageCaraousal/ImageCaraousal.tsx';
 import ResizeThrottle from './ResizeThrottle/ResizeThrottle.tsx';
 import Otpui from './Otpui/Otpui.tsx';
+import Opundoredo from './Opundoredo/Opundoredo.tsx';
 
 
 const router = createBrowserRouter([
@@ -73,6 +74,11 @@ const router = createBrowserRouter([
   {
     path: "/otpui",
     element: <Otpui></Otpui>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/undoredo",
+    element: <Opundoredo></Opundoredo>,
     errorElement: <ErrorPage />,
   },
 ]);

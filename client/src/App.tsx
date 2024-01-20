@@ -34,6 +34,9 @@ function App() {
       <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
         <Link to={`otpui`}>Ui for OTP</Link>
       </li>
+      <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
+        <Link to={`undoredo`}>Undo Redo OP</Link>
+      </li>
     </ul>
   </div>
   )
