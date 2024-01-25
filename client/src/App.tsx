@@ -6,7 +6,9 @@ function App() {
   return (<div className=''>
     <h1 className='flex justify-center m-5 text-xl font-serif border-2 p-2 rounded-md bg-black text-white '>Machine Coding React Js Practice</h1>
     <ul className='flex flex-col gap-3 justify-center items-center  bg-slate-300 p-2 m-5'>
-
+      <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
+        <Link to={`Tictactoe`}>Tic Tac Toe</Link>
+      </li>
       <li className='bg-red-700 rounded-md p-2 text-xl text-white w-1/6 text-center'>
         <Link to={`dark`} className=''>Dark Mode</Link>
       </li>

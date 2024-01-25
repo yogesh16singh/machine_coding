@@ -20,6 +20,7 @@ import Otpui from './Otpui/Otpui.tsx';
 import Opundoredo from './Opundoredo/Opundoredo.tsx';
 import TransferList from './TransferList/TransferList.tsx';
 import Star from './Star/Star.tsx';
+import Tictactoe from './Tictactoe/Tictactoe.tsx';
 
 
 const router = createBrowserRouter([
@@ -91,6 +92,11 @@ const router = createBrowserRouter([
   {
     path: "/starcomponent",
     element: <Star></Star>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/Tictactoe",
+    element: <Tictactoe></Tictactoe>,
     errorElement: <ErrorPage />,
   },
 ]);
