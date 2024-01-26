@@ -21,6 +21,7 @@ import Opundoredo from './Opundoredo/Opundoredo.tsx';
 import TransferList from './TransferList/TransferList.tsx';
 import Star from './Star/Star.tsx';
 import Tictactoe from './Tictactoe/Tictactoe.tsx';
+import Gridlight from './GridLights/Gridlight.tsx';
 
 
 const router = createBrowserRouter([
@@ -97,6 +98,11 @@ const router = createBrowserRouter([
   {
     path: "/Tictactoe",
     element: <Tictactoe></Tictactoe>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/gridlight",
+    element: <Gridlight></Gridlight>,
     errorElement: <ErrorPage />,
   },
 ]);
