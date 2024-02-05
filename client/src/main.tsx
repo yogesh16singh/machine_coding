@@ -22,6 +22,7 @@ import TransferList from './TransferList/TransferList.tsx';
 import Star from './Star/Star.tsx';
 import Tictactoe from './Tictactoe/Tictactoe.tsx';
 import Gridlight from './GridLights/Gridlight.tsx';
+import MultiSelectSearch from './MultiSelectSearch/MultiSelectSearch.tsx';
 
 
 const router = createBrowserRouter([
@@ -103,6 +104,11 @@ const router = createBrowserRouter([
   {
     path: "/gridlight",
     element: <Gridlight></Gridlight>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/multiSelectSearch",
+    element: <MultiSelectSearch></MultiSelectSearch>,
     errorElement: <ErrorPage />,
   },
 ]);
